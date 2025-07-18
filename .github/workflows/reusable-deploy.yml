@@ -2,7 +2,6 @@ name: deploy-file
 
 on:
   workflow_call:
-    
 
 jobs:
   docker-deploy:
