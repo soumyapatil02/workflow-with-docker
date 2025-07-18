@@ -1,0 +1,22 @@
+name: write the reusable build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build:
+
+    uses: ./.github/workflows/reusable-build.yml
+
+  deploy:
+
+    needs: build
+
+    uses: ./.github/workflows/reusable-deploy.yml
+  
+
+
+
