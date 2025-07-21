@@ -25,5 +25,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: SoumyaNadiger/main-py:latest
+          tags: soumyanadiger/main-py:latest
 
