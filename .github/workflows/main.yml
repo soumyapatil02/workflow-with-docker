@@ -17,8 +17,8 @@ jobs:
 
     uses: ./.github/workflows/reusable-deploy.yml
     secrets:
-      ${{ docker.username: secrets.DOCKER.USERNMAE }}
-      ${{ docker.password: secrets.DOCKER.PASSWORD }}
+      DOCKER_USERNAME: ${{ secrets.DOCKER.USERNMAE }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER.PASSWORD }}
   
 
 
