@@ -16,6 +16,9 @@ jobs:
     needs: build
 
     uses: ./.github/workflows/reusable-deploy.yml
+    secrets:
+      ${{ docker.username: secrets.DOCKER.USERNMAE }}
+      ${{ docker.password: secrets.DOCKER.PASSWORD }}
   
 
 
